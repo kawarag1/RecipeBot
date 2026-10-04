@@ -1,0 +1,19 @@
+[project]
+name = "receiptbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kawaragi", email = "dima.kretinin.05@mail.ru" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "telebot>=0.0.5",
+]
+
+[project.scripts]
+receiptbot = "receiptbot:main"
+
+[build-system]
+requires = ["uv_build>=0.12.22,<0.13.0"]
+build-backend = "uv_build"
