@@ -1,0 +1,10 @@
+services:
+  recipe_bot:
+    container_name: recipe_bot
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    restart: always
+    command: ["python", "main.py"]
+    env_file:
+      - ../.env
